@@ -1,0 +1,32 @@
+# Crowd Monitoring System - Demo Run Commands
+# Copy everything below and paste it into your terminal.
+
+# 1) Go to project root
+cd /home/desai/Desktop/Crowd-Monitoring-System
+
+# 2) Stop any old processes from previous runs
+pkill -f "react-scripts|send.py|node" || true
+pkill -f "npm start" || true
+
+# 3) Start the desktop crowd monitoring app (keep this terminal open)
+DISPLAY=:0 ./.venv/bin/python send.py
+
+# ---- Open a second terminal and run these ----
+cd /home/desai/Desktop/Crowd-Monitoring-System/Front-end/crowd-detect-ui
+npm install
+npm start
+
+# ---- Open a third terminal and run these if you want the admin UI too ----
+cd /home/desai/Desktop/Crowd-Monitoring-System/Front-end/admin-ui
+npm install
+npm start
+
+# If the virtual environment is missing, run this once:
+# cd /home/desai/Desktop/Crowd-Monitoring-System
+# python3 -m venv .venv
+# . .venv/bin/activate
+# pip install -r requirements.txt
+
+# If you only need the Python app and not the React UI:
+# cd /home/desai/Desktop/Crowd-Monitoring-System
+# DISPLAY=:0 ./.venv/bin/python send.py
