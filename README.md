@@ -37,7 +37,6 @@ The final system is called the **Smart Crowd Monitoring and Choke Point Preventi
 **Clustering & Graph Analysis** – DBSCAN, graph isomorphism, articulation point detection  
 **Mathematical Modeling** – Fuzzy set theory, Weighted Moving Average, z-score, Poisson distribution *(future scope)*  
 **Visualization** – Voronoi diagrams, real-time color-coded risk maps  
-**Frontend/UI** – Managed by **Tanish Bhongade** using modern UI design practices  
 **Backend/Server** – Deployed using **AWS services** for scalability  
 
 ---
